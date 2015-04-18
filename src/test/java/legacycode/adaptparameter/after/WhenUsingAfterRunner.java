@@ -1,8 +1,9 @@
 package legacycode.adaptparameter.after;
 
-import org.testng.annotations.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
+
+import org.testng.annotations.Test;
 
 @Test
 public class WhenUsingAfterRunner {

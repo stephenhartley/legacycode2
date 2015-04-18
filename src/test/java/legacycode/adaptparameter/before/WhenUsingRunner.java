@@ -2,6 +2,7 @@ package legacycode.adaptparameter.before;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
+import static org.mockito.Mockito.when;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,7 +10,6 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import static org.mockito.Mockito.when;
 
 @Test
 public class WhenUsingRunner {

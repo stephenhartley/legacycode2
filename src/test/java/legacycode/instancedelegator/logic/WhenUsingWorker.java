@@ -4,7 +4,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.when;
-import legacycode.instancedelegator.logic.Worker;
 import legacycode.instancedelegator.utils.UtilityClass;
 
 import org.mockito.Mock;
