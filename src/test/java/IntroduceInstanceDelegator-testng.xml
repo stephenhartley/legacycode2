@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="UtilityClassSuite" parallel="false" verbose="10">
+  <test name="Test">
+    <classes>
+      <class name="legacycode.instancedelegator.utils.WhenUsingUtilityClass"/>
+      <class name="legacycode.instancedelegator.logic.WhenUsingWorker"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
