@@ -16,7 +16,6 @@ public class WhenUsingWorker {
 
 	@Mock
 	private UtilityClass mockUtilityClass;
-	//comment
 
 	@BeforeMethod
 	public void setUp() {
