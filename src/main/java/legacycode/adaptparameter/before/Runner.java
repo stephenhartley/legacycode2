@@ -3,7 +3,7 @@ package legacycode.adaptparameter.before;
 import javax.servlet.http.HttpServletRequest;
 
 public class Runner {
-	
+
 	String doTheWork(HttpServletRequest request) {
 		String result = null;
 		String[] values = request.getParameterValues("someParamName");

@@ -13,19 +13,20 @@ import org.testng.annotations.Test;
 
 @Test
 public class WhenUsingRunner {
-	
+
 	@Mock
 	HttpServletRequest mockRequest;
-	
+
 	@BeforeMethod
 	public void setUp() {
 		MockitoAnnotations.initMocks(this);
 	}
+
 	public void testDoTheWorkUsingAMock() {
-		when(mockRequest.getParameterValues("someParamName")).thenReturn(new String[] {"hello world"});
+		when(mockRequest.getParameterValues("someParamName")).thenReturn(
+				new String[] { "hello world" });
 		String actual = new Runner().doTheWork(mockRequest);
 		assertThat(actual, is("hello world"));
 	}
-
 
 }

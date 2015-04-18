@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 public class ServletParameterSource implements ParameterSource {
 
 	private HttpServletRequest request;
-	
+
 	public ServletParameterSource(HttpServletRequest request) {
 		super();
 		this.request = request;

@@ -7,11 +7,11 @@ import org.testng.annotations.Test;
 
 @Test
 public class WhenUsingAfterRunner {
-	
+
 	public void testDoTheWorkUsingFakeParamterSource() {
 		String actual = new AfterRunner().doTheWork(new FakeParameterSource());
 		assertThat(actual, is("fakeParamValue"));
-		
+
 	}
 
 }

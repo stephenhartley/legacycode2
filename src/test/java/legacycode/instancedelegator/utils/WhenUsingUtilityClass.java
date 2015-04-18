@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 
 @Test
 public class WhenUsingUtilityClass {
-	
-  public void testAdd() {
-	  assertThat(UtilityClass.add(4, 6), is(10));
-  }
+
+	public void testAdd() {
+		assertThat(UtilityClass.add(4, 6), is(10));
+	}
 
 }
