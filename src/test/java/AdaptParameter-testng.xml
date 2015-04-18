@@ -2,6 +2,7 @@
 <suite name="AdaptParameterSuite" parallel="false" verbose="10">
   <test name="Test">
     <classes>
+      <class name="legacycode.adaptparameter.after.WhenUsingAfterRunner"/>
       <class name="legacycode.adaptparameter.before.WhenUsingRunner"/>
     </classes>
   </test> <!-- Test -->

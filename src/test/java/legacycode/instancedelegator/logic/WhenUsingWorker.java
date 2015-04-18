@@ -12,6 +12,7 @@ import org.mockito.MockitoAnnotations;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+@Test
 public class WhenUsingWorker {
 
 	@Mock
@@ -22,7 +23,6 @@ public class WhenUsingWorker {
 		MockitoAnnotations.initMocks(this);
 	}
 
-	@Test
 	public void testAdd() {
 		Worker worker = new Worker(mockUtilityClass);
 		when(mockUtilityClass.addInstance(anyInt(), anyInt())).thenReturn(29);
