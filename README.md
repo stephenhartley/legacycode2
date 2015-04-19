@@ -6,6 +6,7 @@ Implemented so far:
 
 * Adapt Parameter
 * Introduce Instance Delegator
+* Extract Interface
 
 
 ````java
