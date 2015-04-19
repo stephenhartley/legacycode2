@@ -12,4 +12,8 @@ public class WhenUsingUtilityClass {
 		assertThat(UtilityClass.add(4, 6), is(10));
 	}
 
+	public void testAddInstance() {
+		assertThat(new UtilityClass().addInstance(5, 2), is(7));
+	}
+
 }

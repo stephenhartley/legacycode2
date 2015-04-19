@@ -2,8 +2,10 @@
 <suite name="UtilityClassSuite" parallel="false" verbose="10">
   <test name="Test">
     <classes>
+      <class name="legacycode.instancedelegator.utils.WhenUsingWorker"/>
       <class name="legacycode.instancedelegator.utils.WhenUsingUtilityClass"/>
-      <class name="legacycode.instancedelegator.logic.WhenUsingWorker"/>
+      <class name="legacycode.instancedelegator.logic.WhenUsingWorkerWithMock"/>
+      <class name="legacycode.instancedelegator.logic.WhenUsingWorkerWithFake"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
