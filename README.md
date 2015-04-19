@@ -2,6 +2,12 @@
 
 Some Java examples of Dependency Breaking Techniques from Michael Feathers' "Working Effectively with Legacy Code".
 
+Implemented so far:
+
+* Adapt Parameter
+* Introduce Instance Delegator
+
+
 ````java
 String doTheWork(HttpServletRequest request) {
 		String result = null;
