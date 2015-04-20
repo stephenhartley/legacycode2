@@ -14,7 +14,7 @@ public class ServletParameterSource implements ParameterSource {
 	@Override
 	public String getParameterForName(String paramName) {
 		String result = null;
-		String[] values = request.getParameterValues("someParamName");
+		String[] values = request.getParameterValues(paramName);
 		if (values != null && values.length > 0) {
 			result = values[0];
 		}
