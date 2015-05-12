@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.testng.annotations.Test;
 
 @Test
-public class WhenUsingUtilityClass {
+public final class WhenUsingUtilityClass {
 
 	public void testAdd() {
 		assertThat(UtilityClass.add(4, 6)).isEqualTo(10);

@@ -2,7 +2,7 @@ package legacycode.instancedelegator.logic;
 
 import legacycode.instancedelegator.utils.UtilityClass;
 
-public class Worker {
+public final class Worker {
 
 	private UtilityClass utilityClass;
 

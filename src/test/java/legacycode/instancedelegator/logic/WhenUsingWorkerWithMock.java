@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 @Test
-public class WhenUsingWorkerWithMock {
+public final class WhenUsingWorkerWithMock {
 
 	@Mock
 	private UtilityClass mockUtilityClass;

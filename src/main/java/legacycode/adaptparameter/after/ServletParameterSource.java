@@ -2,7 +2,7 @@ package legacycode.adaptparameter.after;
 
 import javax.servlet.http.HttpServletRequest;
 
-public class ServletParameterSource implements ParameterSource {
+public final class ServletParameterSource implements ParameterSource {
 
 	private HttpServletRequest request;
 

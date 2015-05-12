@@ -6,7 +6,7 @@ import legacycode.instancedelegator.utils.UtilityClass;
 import org.testng.annotations.Test;
 
 @Test
-public class WhenUsingWorker {
+public final class WhenUsingWorker {
 
 	public void testDoSomeWork() {
 		Worker worker = new Worker(new UtilityClass());

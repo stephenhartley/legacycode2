@@ -6,7 +6,7 @@ import legacycode.instancedelegator.utils.FakeUtilityClass;
 import org.testng.annotations.Test;
 
 @Test
-public class WhenUsingWorkerWithFake {
+public final class WhenUsingWorkerWithFake {
 
 	public void testDoSomeWork() {
 		Worker worker = new Worker(new FakeUtilityClass());

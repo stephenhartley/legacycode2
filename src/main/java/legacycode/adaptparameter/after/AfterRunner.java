@@ -1,6 +1,6 @@
 package legacycode.adaptparameter.after;
 
-public class AfterRunner {
+public final class AfterRunner {
 
 	String doTheWork(ParameterSource source) {
 		return source.getParameterForName("someParamName");

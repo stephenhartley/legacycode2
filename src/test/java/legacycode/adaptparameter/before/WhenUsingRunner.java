@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 @Test
-public class WhenUsingRunner {
+public final class WhenUsingRunner {
 
 	@Mock
 	HttpServletRequest mockRequest;

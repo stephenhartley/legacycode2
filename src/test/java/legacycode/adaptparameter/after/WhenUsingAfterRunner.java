@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.testng.annotations.Test;
 
 @Test
-public class WhenUsingAfterRunner {
+public final class WhenUsingAfterRunner {
 
 	public void testDoTheWorkUsingFakeParameterSource() {
 		String actual = new AfterRunner().doTheWork(new FakeParameterSource());

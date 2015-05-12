@@ -2,7 +2,7 @@ package legacycode.adaptparameter.before;
 
 import javax.servlet.http.HttpServletRequest;
 
-public class Runner {
+public final class Runner {
 
 	String doTheWork(HttpServletRequest request) {
 		String result = null;
