@@ -1,7 +1,6 @@
 package legacycode.adaptparameter.before;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.hamcrest.core.Is.is;
 import static org.mockito.Mockito.when;
 
 import javax.servlet.http.HttpServletRequest;
