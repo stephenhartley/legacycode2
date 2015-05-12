@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AllSuites" parallel="false" verbose="10">
+	<test name="All TestNG suites">
+		<suite-files>
+			<suite-file path="./AdaptParameter-testng.xml" />
+			<suite-file path="./ExtractInterface-testng.xml" />
+			<suite-file path="./IntroduceInstanceDelegator-testng.xml" />
+		</suite-files>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
