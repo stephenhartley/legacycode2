@@ -1,7 +1,6 @@
 package legacycode.instancedelegator.logic;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.core.Is.is;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.when;
 import legacycode.instancedelegator.utils.UtilityClass;
@@ -25,6 +24,6 @@ public class WhenUsingWorkerWithMock {
 	public void testDoSomeWork() {
 		Worker worker = new Worker(mockUtilityClass);
 		when(mockUtilityClass.addInstance(anyInt(), anyInt())).thenReturn(29);
-		assertThat(worker.doSomeWork(), is(29));
+		assertThat(worker.doSomeWork()).isEqualTo(29);
 	}
 }

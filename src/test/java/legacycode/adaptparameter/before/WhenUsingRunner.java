@@ -1,6 +1,6 @@
 package legacycode.adaptparameter.before;
 
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.mockito.Mockito.when;
 
@@ -26,7 +26,7 @@ public class WhenUsingRunner {
 		when(mockRequest.getParameterValues("someParamName")).thenReturn(
 				new String[] { "hello world" });
 		String actual = new Runner().doTheWork(mockRequest);
-		assertThat(actual, is("hello world"));
+		assertThat(actual).isEqualTo("hello world");
 	}
 
 }
