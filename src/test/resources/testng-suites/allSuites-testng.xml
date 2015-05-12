@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="AllSuites" parallel="false" verbose="10">
-	<test name="AllTestNGsuites">
+	<test name="AllTestNGSuites">
 		<suite-files>
 			<suite-file path="./AdaptParameter-testng.xml" />
 			<suite-file path="./ExtractInterface-testng.xml" />
