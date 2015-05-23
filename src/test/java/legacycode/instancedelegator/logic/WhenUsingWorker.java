@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 @Test
 public final class WhenUsingWorker {
 
-	public void testDoSomeWork() {
-		Worker worker = new Worker(new UtilityClass());
-		assertThat(worker.doSomeWork()).isEqualTo(8);
-	}
+    public void testDoSomeWork() {
+        Worker worker = new Worker(new UtilityClass());
+        assertThat(worker.doSomeWork()).isEqualTo(8);
+    }
 }

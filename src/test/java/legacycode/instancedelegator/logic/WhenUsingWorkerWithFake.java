@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 @Test
 public final class WhenUsingWorkerWithFake {
 
-	public void testDoSomeWork() {
-		Worker worker = new Worker(new FakeUtilityClass());
-		assertThat(worker.doSomeWork()).isEqualTo(42);
-	}
+    public void testDoSomeWork() {
+        Worker worker = new Worker(new FakeUtilityClass());
+        assertThat(worker.doSomeWork()).isEqualTo(42);
+    }
 }

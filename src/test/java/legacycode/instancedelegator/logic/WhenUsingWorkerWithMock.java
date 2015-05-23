@@ -13,17 +13,17 @@ import org.testng.annotations.Test;
 @Test
 public final class WhenUsingWorkerWithMock {
 
-	@Mock
-	private UtilityClass mockUtilityClass;
+    @Mock
+    private UtilityClass mockUtilityClass;
 
-	@BeforeMethod
-	public void setUp() {
-		MockitoAnnotations.initMocks(this);
-	}
+    @BeforeMethod
+    public void setUp() {
+        MockitoAnnotations.initMocks(this);
+    }
 
-	public void testDoSomeWork() {
-		Worker worker = new Worker(mockUtilityClass);
-		when(mockUtilityClass.addInstance(anyInt(), anyInt())).thenReturn(29);
-		assertThat(worker.doSomeWork()).isEqualTo(29);
-	}
+    public void testDoSomeWork() {
+        Worker worker = new Worker(mockUtilityClass);
+        when(mockUtilityClass.addInstance(anyInt(), anyInt())).thenReturn(29);
+        assertThat(worker.doSomeWork()).isEqualTo(29);
+    }
 }

@@ -14,24 +14,23 @@ import org.testng.annotations.Test;
 
 @Test
 public final class WhenUsingRunner {
-	
-	private static final Logger LOGGER = Logger.getLogger(WhenUsingRunner.class.getName());
-	    
 
-	@Mock
-	HttpServletRequest mockRequest;
+    private static final Logger LOGGER = Logger.getLogger(WhenUsingRunner.class.getName());
 
-	@BeforeMethod
-	public void setUp() {
-		MockitoAnnotations.initMocks(this);
-	}
+    @Mock
+    HttpServletRequest mockRequest;
 
-	public void testDoTheWorkUsingAMock() {
-		LOGGER.info("Just started running the test!");
-		when(mockRequest.getParameterValues("someParamName")).thenReturn(
-				new String[] { "hello world" });
-		String actual = new Runner().doTheWork(mockRequest);
-		assertThat(actual).isEqualTo("hello world");
-	}
+    @BeforeMethod
+    public void setUp() {
+        MockitoAnnotations.initMocks(this);
+    }
+
+    public void testDoTheWorkUsingAMock() {
+        LOGGER.info("Just started running the test!");
+        when(mockRequest.getParameterValues("someParamName")).thenReturn(
+                new String[] { "hello world" });
+        String actual = new Runner().doTheWork(mockRequest);
+        assertThat(actual).isEqualTo("hello world");
+    }
 
 }
