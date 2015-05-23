@@ -3,19 +3,19 @@ package legacycode.adaptparameter.before;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
-import java.util.logging.Logger;
-
 import javax.servlet.http.HttpServletRequest;
 
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 @Test
 public final class WhenUsingRunner {
 
-    private static final Logger LOGGER = Logger.getLogger(WhenUsingRunner.class.getName());
+    private static final Logger LOGGER = LoggerFactory.getLogger(WhenUsingRunner.class);
 
     @Mock
     HttpServletRequest mockRequest;
